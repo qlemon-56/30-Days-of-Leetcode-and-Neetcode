@@ -21,3 +21,8 @@ class Solution:
             return True
         
 #problem name: contains duplicate
+
+# what i learnt:
+# sets can be used to create a unique list from an existing list
+# sets order items from smallest to biggest 
+
