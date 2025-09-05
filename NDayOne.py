@@ -1,3 +1,4 @@
+# Initial solution, O(N^2) complexity
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
         for i in nums:
@@ -9,4 +10,14 @@ class Solution:
 
         return False
 
-# contains duplicate
+# Final solution, O(N) complexity
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        
+        uniqueNums = list(set(nums))
+        if len(uniqueNums) == len(nums):
+            return False
+        else: 
+            return True
+        
+#problem name: contains duplicate
